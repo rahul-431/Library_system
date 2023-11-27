@@ -5,9 +5,9 @@ namespace Library_system{
         Member member=new Member();
         public void addNewMember(string memId, string name, string address)
         {
-            member.memId=memId;
-            member.name=name;
-            member.address=address;
+            member.MemId=memId;
+            member.Name=name;
+            member.Address=address;
         }
         public void removeMember(string memId)
         {
@@ -15,7 +15,7 @@ namespace Library_system{
         }
         public string getALlMember()
         {
-            return "Member Id: "+member.memId+" name: "+member.name+" address: "+member.address;
+            return "Member Id: "+member.MemId+" name: "+member.Name+" address: "+member.Address;
         }
     }
 }

@@ -5,11 +5,11 @@ namespace Library_system{
         public void addNewBook(string bookId,string author, string title,string price, bool avail)
         {
 
-            book.bookId=bookId;
-            book.author=author;
-            book.title=title;
-            book.price=price;
-            book.available=avail;   
+            book.BookId=bookId;
+            book.Author=author;
+            book.Title=title;
+            book.Price=price;
+            book.Available=avail;   
         }
         public void removeBook(string bookId)
         {
@@ -17,7 +17,7 @@ namespace Library_system{
         }
         public string getAllBooks()
         {
-            return "Book id: "+book.bookId+" Title: "+book.title+" Author: "+book.author+" Price: "+book.price;
+            return "Book id: "+book.BookId+" Title: "+book.Title+" Author: "+book.Author+" Price: "+book.Price;
         }
     }
 }

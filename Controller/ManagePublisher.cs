@@ -5,9 +5,9 @@ namespace Library_system{
         Publisher publish=new Publisher();
          public void addNewPublisher(string pubId, string name, string address)
         {
-            publish.pubId=pubId;
-            publish.name=name;
-            publish.address=address;
+            publish.PubId=pubId;
+            publish.Name=name;
+            publish.Address=address;
         }
         public void removePublisher(string pubId)
         {
@@ -15,7 +15,7 @@ namespace Library_system{
         }
         public string getAllPublisher()
         {
-            return "Publisher Id: "+publish.pubId+" name: "+publish.name+" address: "+publish.address;
+            return "Publisher Id: "+publish.PubId+" name: "+publish.Name+" address: "+publish.Address;
         }
     }
 }
