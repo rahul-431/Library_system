@@ -7,37 +7,39 @@ namespace Library_system
     {
         public static void Main(string[] args)
         {
-            ManageBook mb = new ManageBook();
+            Tasks task = new Tasks();
             do
             {
-                Console.WriteLine("\n\n\n----welcome to Library system-----\n ******Choose Any Option*******\n 1. Enter a new Book \n 2. Show all books detail\n"+
+                Console.WriteLine("\n\n\n----welcome to Library system-----\n ******Choose Any Option*******\n 1. Enter a new Book \n 2. Show all books detail\n" +
                 "\n 3. Enter new Member\n 4. Show all Members \n 5. Enter a new publisher\n 6. Show all publisher details\n 7. Enter a new Borrower \n 8. Show all Borrower \n 9. Exit App");
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
-                        Console.WriteLine("\n\n-----Enter Book details-------");
-                        Console.WriteLine("BookI Id: ");
-                        string bid = Console.ReadLine();
-                        Console.WriteLine("Title: ");
-                        string title = Console.ReadLine();
-                        Console.WriteLine("Author: ");
-                        string author = Console.ReadLine();
-                        Console.WriteLine("Price: ");
-                        string price = Console.ReadLine();
-
-                        mb.addNewBook(bid, author, title, price, true);
+                        task.addNewBook();
                         break;
                     case 2:
-                        List<Book> books=mb.getAllBooks();
-                        foreach (var i in books)
-                        {
-                            Console.WriteLine("Book Id :"+i.BookId+" Title: "+i.Title+" Author: "+i.Author+" Price: "+i.Price+" Availablity: "+i.Available);                            
-                        }
+                        task.viewAllBooks();
                         break;
                     case 3:
-                        Console.WriteLine("\n\n------Enter new Meber------");
-                        
+                        task.addNewMember();
+                        break;
+                    case 4:
+                        task.showAllMember();
+                        break;
+                    case 5:
+                        task.addNewPublisher();
+                        break;
+                    case 6:
+                        task.showAllPublisher();
+                        break;
+                    case 7:
+                        task.addNewBorrower();
+                        break;
+                    case 8:
+                        task.showAllBorrower();
+                        break;
+                    case 9:
                         System.Environment.Exit(0);
                         break;
                     default:

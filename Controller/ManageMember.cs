@@ -2,20 +2,23 @@ using System;
 namespace Library_system{
     public class ManageMember{
         
-        Member member=new Member();
+        
+        private List<Member> members=new List<Member>();
         public void addNewMember(string memId, string name, string address)
         {
+            Member member=new Member();
             member.MemId=memId;
             member.Name=name;
             member.Address=address;
+            members.Add(member);
         }
         public void removeMember(string memId)
         {
 
         }
-        public string getALlMember()
+        public List<Member> getAllMember()
         {
-            return "Member Id: "+member.MemId+" name: "+member.Name+" address: "+member.Address;
+            return members;
         }
     }
 }

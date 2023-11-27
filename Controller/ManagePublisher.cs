@@ -2,20 +2,22 @@ using System;
 namespace Library_system{
     public class ManagePublisher{
 
-        Publisher publish=new Publisher();
+        List<Publisher> publishers=new List<Publisher>();
          public void addNewPublisher(string pubId, string name, string address)
         {
+            Publisher publish=new Publisher();
             publish.PubId=pubId;
             publish.Name=name;
             publish.Address=address;
+            publishers.Add(publish);
         }
         public void removePublisher(string pubId)
         {
 
         }
-        public string getAllPublisher()
+        public List<Publisher> getAllPublisher()
         {
-            return "Publisher Id: "+publish.PubId+" name: "+publish.Name+" address: "+publish.Address;
+            return publishers;
         }
     }
 }
