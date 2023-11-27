@@ -11,7 +11,7 @@ namespace Library_system
             do
             {
                 Console.WriteLine("\n\n\n----welcome to Library system-----\n ******Choose Any Option*******\n 1. Enter a new Book \n 2. Show all books detail\n" +
-                "\n 3. Enter new Member\n 4. Show all Members \n 5. Enter a new publisher\n 6. Show all publisher details\n 7. Enter a new Borrower \n 8. Show all Borrower \n 9. Exit App");
+                "3. Enter new Member\n 4. Show all Members \n 5. Enter a new publisher\n 6. Show all publisher details\n 7. Enter a new Borrower \n 8. Show all Borrower \n 9. Exit App");
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
