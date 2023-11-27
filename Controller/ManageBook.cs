@@ -1,7 +1,7 @@
 using System;
 namespace Library_system{
     class ManageBook{
-            Book book=new Book();
+        Book book=new Book();
         public void addNewBook(string bookId,string author, string title,string price, bool avail)
         {
 
