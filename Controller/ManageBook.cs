@@ -1,23 +1,24 @@
 using System;
 namespace Library_system{
     class ManageBook{
-        Book book=new Book();
+        List<Book> books= new List<Book>();
         public void addNewBook(string bookId,string author, string title,string price, bool avail)
         {
-
+            Book book=new Book();
             book.BookId=bookId;
             book.Author=author;
             book.Title=title;
             book.Price=price;
-            book.Available=avail;   
+            book.Available=avail;
+            books.Add(book);   
         }
         public void removeBook(string bookId)
         {
 
         }
-        public string getAllBooks()
+        public List<Book> getAllBooks()
         {
-            return "Book id: "+book.BookId+" Title: "+book.Title+" Author: "+book.Author+" Price: "+book.Price;
+            return books;
         }
     }
 }
