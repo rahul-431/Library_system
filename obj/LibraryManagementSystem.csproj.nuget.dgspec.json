@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Internship\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {}
+    "D:\\Truenary_Intership\\library system\\LibraryManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Internship\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {
+    "D:\\Truenary_Intership\\library system\\LibraryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Internship\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+        "projectUniqueName": "D:\\Truenary_Intership\\library system\\LibraryManagementSystem.csproj",
         "projectName": "LibraryManagementSystem",
-        "projectPath": "C:\\Internship\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\rahul\\.nuget\\packages\\",
-        "outputPath": "C:\\Internship\\LibraryManagementSystem\\obj\\",
+        "projectPath": "D:\\Truenary_Intership\\library system\\LibraryManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "D:\\Truenary_Intership\\library system\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rahul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
